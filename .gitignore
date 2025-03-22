@@ -1,0 +1,15 @@
+case.ipynb
+merge.ipynb
+cnaes.parquet
+empresas.parquet
+estabelecimentos_reduzido.parquet
+dataset.tar.gz
+estabelecimentos_full.parquet
+
+__pycache__/
+*.pyc
+*.ipynb_checkpoints/
+full_dataset*
+dataset.parquet
+estabelecimentos_full.parquet
+test.parquet

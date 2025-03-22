@@ -1,0 +1,23 @@
+text_target: razaosocial
+real_target: cnpj
+training_set_schema:
+  - user_input
+  - razaosocial
+  - nome_fantasia
+  - uf
+  - identificador_matriz_filial
+  - data_situacao_cadastral
+  - nome_cidade_exterior
+  - data_inicio_atividade
+  - capital_social
+  - porte
+  - cnae_fiscal
+  - descricao_cnae
+  - nome_pais
+  - nome_natureza_juridica
+  - nome_motivo
+  - nome_qualificacao
+  - cnpj
+predictors:
+  - user_input
+  - uf
