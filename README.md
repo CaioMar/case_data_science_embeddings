@@ -33,6 +33,7 @@ Seu objetivo é criar/usar um modelo de Embeddings ou outras técnicas de NLP pa
 #### 2.1. Requisitos
 
 - *Não será permitido o uso de modelos generativos grandes* (GPT-3, GPT-4, Llama, Mistral, modelos pré-treinados da Hugging Face, etc).
+- **Só será permitido o uso das colunas** `user_input` e `uf` como consta no exemplo de solução no notebook `example_solution.ipynb`.
 - Você pode utilizar modelos pré-treinados de Embeddings (Word2Vec, GloVe, FastText, Bert BiEncoders, CrossEncoders, etc) ou treinar um modelo próprio e também utilizar técnicas clássicas de NLP (TF-IDF, CountVectorizer, etc).
 - Você pode utilizar técnicas de pré-processamento de texto (Tokenização, Stemming, Lematização, etc).
 - Você pode utilizar técnicas de similaridade de texto (Cosine Similarity, Jaccard Similarity, etc).
@@ -40,8 +41,11 @@ Seu objetivo é criar/usar um modelo de Embeddings ou outras técnicas de NLP pa
 
 #### 2.2. Entregáveis
 
+**IMPORTANTE!** Antes de começar o case veja o notebook `example_solution.ipynb` para entender o que é esperado como entrega.
+
 Um repositório no GitHub contendo:
 - O código fonte do modelo/técnica utilizado.
-- Um notebook com o passo a passo da solução.
+- Um notebook/scripts com o passo a passo da solução.
+- A performance em **precision** (top 1 e top 5) do modelo/técnica utilizado (um acerto no top 5 é considerado quando a empresa correta está entre as 5 primeiras empresas retornadas pelo modelo).
 
-**IMPORTANTE!** Lembre-se de documentar o código e o notebook de forma clara e objetiva, pois sua técnica/modelo será avaliada em um conjunto de teste que não foi disponibilizado.
+Por fim, lembre-se de documentar o código e o notebook de forma clara e objetiva, **pois sua técnica/modelo será avaliada em um conjunto de teste que não foi disponibilizado**.
