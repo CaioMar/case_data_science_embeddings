@@ -50,3 +50,7 @@ Um repositório no GitHub contendo:
 - A performance em **precision** (top 1 e top 5) do modelo/técnica utilizado (um acerto no top 5 é considerado quando a empresa correta está entre as 5 primeiras empresas retornadas pelo modelo).
 
 Por fim, lembre-se de documentar o código e o notebook de forma clara e objetiva, **pois sua técnica/modelo será avaliada em um conjunto de teste que não foi disponibilizado**.
+
+A performance do modelo nos conjuntos de treino e teste será avaliada de acordo com a métrica de **precision** (top 1 e top 5) e isso será um dos principais critérios de avaliação do case.
+
+Boa sorte!
