@@ -1,6 +1,3 @@
-from concurrent.futures import ThreadPoolExecutor
-
-from tqdm import tqdm
 import pandas as pd
 
 from openai import OpenAI
@@ -37,37 +34,39 @@ Fill in the <user search input list> with the possible user search inputs.
 
 client = OpenAI()
 
+
 def parse_response(response):
     try:
         lines = response.split("Possible user search inputs:")[1].split("\n")
     except:
         lines = response.split("\n")
-    lines = [line.replace("- ","").strip() for line in lines]
+    lines = [line.replace("- ", "").strip() for line in lines]
     lines = [line for line in lines if line]
     return lines
 
 
 def get_model_output(
     row: pd.Series,
-    prompt_template: str, 
-    temperature: float = 0.0, 
-    model: str = "gpt-4o-mini"
+    prompt_template: str,
+    temperature: float = 0.0,
+    model: str = "gpt-4o-mini",
 ) -> str:
-    
-    content = prompt_template.format(razao_social=row['razaosocial'], nome_fantasia=row['nome_fantasia'])
+
+    content = prompt_template.format(
+        razao_social=row["razaosocial"], nome_fantasia=row["nome_fantasia"]
+    )
 
     completion = client.chat.completions.create(
         model=model,
-        messages=[
-            {
-                "role": "user",
-                "content": content
-            }
-        ],
+        messages=[{"role": "user", "content": content}],
         temperature=temperature,
-        
     )
-    return [completion.choices[0].message.content, row['razaosocial'], row['nome_fantasia']]
+    return [
+        completion.choices[0].message.content,
+        row["razaosocial"],
+        row["nome_fantasia"],
+    ]
+
 
 def process_row(row):
     return get_model_output(row, PROMPT_TEMPLATE)

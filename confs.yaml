@@ -1,4 +1,6 @@
-text_target: razaosocial
+text_target:
+  - razaosocial
+  - nome_fantasia
 real_target: cnpj
 training_set_schema:
   - user_input
