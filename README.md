@@ -5,9 +5,9 @@ Case Seleção - Cientista de Dados NLP
     * [1.1. Contexto do case](#11-contexto-do-case)
     * [1.2. Sobre o Dataset](#12-sobre-o-dataset)
       * [1.2.1 Enriquecimento de Dados](#121-enriquecimento-de-dados)
-* [2. Tarefas](#2-tarefas)
-    * [2.1. Enriquecimento de Dados](#21-enriquecimento-de-dados)
-    * [2.2. Embeddings de Razão Social/Nome Fantasia de Empresas](#22-embeddings-de-razão-socialnome-fantasia-de-empresas)
+* [2. Tarefa do Cientista](#2-tarefa-do-cientista)
+    * [2.1. Requisitos](#21-requisitos)
+    * [2.2. Entregáveis](#22-entregáveis)
 
 
 ### 1. Introdução
@@ -33,7 +33,7 @@ Seu objetivo é criar/usar um modelo de Embeddings ou outras técnicas de NLP pa
 #### 2.1. Requisitos
 
 - *Não será permitido o uso de modelos generativos grandes* (GPT-3, GPT-4, Llama, Mistral, modelos pré-treinados da Hugging Face, etc).
-- **Só será permitido o uso das colunas** `user_input` e `uf` como consta no exemplo de solução no notebook `example_solution.ipynb`.
+- **Só será permitido o uso das colunas** `user_input` e/ou `uf` como consta no exemplo de solução no notebook `example_solution.ipynb`.
 - Você pode utilizar modelos pré-treinados de Embeddings (Word2Vec, GloVe, FastText, Bert BiEncoders, CrossEncoders, etc), pode *tunar* algum modelo pré-treinado ou treinar um modelo próprio. Além disso, também pode utilizar técnicas clássicas de NLP (TF-IDF, CountVectorizer, etc).
 - Você pode utilizar técnicas de pré-processamento de texto (Tokenização, Stemming, Lematização, etc).
 - Você pode utilizar técnicas de similaridade de texto (Cosine Similarity, Jaccard Similarity, etc).
