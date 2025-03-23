@@ -34,10 +34,11 @@ Seu objetivo é criar/usar um modelo de Embeddings ou outras técnicas de NLP pa
 
 - *Não será permitido o uso de modelos generativos grandes* (GPT-3, GPT-4, Llama, Mistral, modelos pré-treinados da Hugging Face, etc).
 - **Só será permitido o uso das colunas** `user_input` e `uf` como consta no exemplo de solução no notebook `example_solution.ipynb`.
-- Você pode utilizar modelos pré-treinados de Embeddings (Word2Vec, GloVe, FastText, Bert BiEncoders, CrossEncoders, etc) ou treinar um modelo próprio e também utilizar técnicas clássicas de NLP (TF-IDF, CountVectorizer, etc).
+- Você pode utilizar modelos pré-treinados de Embeddings (Word2Vec, GloVe, FastText, Bert BiEncoders, CrossEncoders, etc), pode *tunar* algum modelo pré-treinado ou treinar um modelo próprio. Além disso, também pode utilizar técnicas clássicas de NLP (TF-IDF, CountVectorizer, etc).
 - Você pode utilizar técnicas de pré-processamento de texto (Tokenização, Stemming, Lematização, etc).
 - Você pode utilizar técnicas de similaridade de texto (Cosine Similarity, Jaccard Similarity, etc).
 - Você pode utilizar técnicas de classificação de texto (SVM, Random Forest, etc).
+- Você poder combinar diversas técnicas para atingir o objetivo.
 
 #### 2.2. Entregáveis
 
